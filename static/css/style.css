@@ -8,7 +8,11 @@ body, h1, h2, h3, p, form {
 body {
     background-color: #f0f0f0;
     color: #333;
-    font-family: Arial, sans-serif;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 /* Center the content */
@@ -16,80 +20,85 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;
 }
 
 /* Style the main content container */
 .content > div {
     background-color: #fff;
     border-radius: 10px;
-    padding: 20px;
+    padding: 40px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Apply greyscale effect */
+    filter: grayscale(100%);
 }
 
 /* Style the heading */
 h1 {
     color: #333;
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 /* Style the paragraph */
 p {
     color: #666;
-    line-height: 1.6;
+    line-height: 1.8;
+    font-size: 18px;
 }
 
 /* Style the form container */
 form {
-    margin-top: 20px;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 400px;
 }
 
 /* Style the subheading */
 h2 {
     color: #333;
-    font-size: 20px;
-    margin-bottom: 10px;
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
 /* Style the label for total savings input */
 h3 {
     color: #333;
-    font-size: 16px;
-    margin-bottom: 5px;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 /* Style the input for total savings */
 input[name='zakat'] {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 /* Style the submit button */
 input[type='submit'] {
-    margin-top: 10px;
-    padding: 10px 20px;
+    margin-top: 20px;
+    padding: 15px 30px;
     background-color: #007BFF;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 /* Style the Donate Now button */
 a > button {
-    margin-top: 20px;
-    padding: 10px 20px;
+    margin-top: 30px;
+    padding: 15px 30px;
     background-color: #28A745;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
     text-decoration: none;
 }
 
@@ -101,15 +110,15 @@ input[type='submit']:hover, a > button:hover {
 /* Responsive styles */
 @media (max-width: 600px) {
     h1 {
-        font-size: 20px;
+        font-size: 30px;
     }
     h2 {
-        font-size: 18px;
+        font-size: 24px;
     }
     h3 {
-        font-size: 14px;
+        font-size: 20px;
     }
     p {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
