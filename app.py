@@ -23,15 +23,16 @@ db = fb.database()
 #Code goes below here
 
 
-@app.route('/zakat', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def zakat():
     money = ''
     zakat = ''
     if request.method == 'POST':
         try:
-            int(money) = request.form['zakat']
-            zakat = money*0.025
-            db.child("zakat").update(history)
+            money = request.form['zakat']
+            zakat = int(money)*0.025
+            db.child("zakat").set()            
+            db.child("zakat").update(zakat)
             zakat = db.child("zakat").get().val()
         except:
             zakat = 'Error'

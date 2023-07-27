@@ -1,16 +1,115 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set body background color and text color */
 body {
-	margin: 0;
-	padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Arial, sans-serif;
 }
 
+/* Center the content */
 .content {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
 }
 
-.profile-container {
-	display: flex;
-	justify-content: space-around;
-	flex-direction: row;
+/* Style the main content container */
+.content > div {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the heading */
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style the paragraph */
+p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Style the form container */
+form {
+    margin-top: 20px;
+}
+
+/* Style the subheading */
+h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Style the label for total savings input */
+h3 {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Style the input for total savings */
+input[name='zakat'] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Style the submit button */
+input[type='submit'] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Style the Donate Now button */
+a > button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28A745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* Hover effect on buttons */
+input[type='submit']:hover, a > button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    p {
+        font-size: 14px;
+    }
 }
