@@ -31,8 +31,10 @@ def zakat():
         try:
             money = request.form['zakat']
             zakat = int(money)*0.025
-            db.child("zakat").set()            
-            db.child("zakat").update(zakat)
+            if db.child("zakat").get().val() == None:
+                db.child("zakat").set(zakat)
+            else:            
+                db.child("zakat").update(zakat)
             zakat = db.child("zakat").get().val()
         except:
             zakat = 'Error'
