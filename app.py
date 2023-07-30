@@ -43,7 +43,7 @@ def root():
                 db.child(organization).set(dictionary)
         except:
             pass
-
+    return render_template("index.html")
 #Code goes above here
 
 if __name__ == '__main__':
