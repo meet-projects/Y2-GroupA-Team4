@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Conference</title>
+	<link rel="stylesheet" src="{{url_for('static',filename='./css/style.css')}}">
 </head>
 <body>
     <img src='https://www.wcpec-8.com/templates/yootheme/cache/40/wcpec-8_slider-home_1-40e234e8.jpeg'></img>
     <br>
-    <center>
+    <div class="center">
         <h1>Conference</h1>
         <p>Brief intro here!</p>
-        <div>
+        <div class="profiles">
             <div class='profiles'>
                 <img  src='https://www.wvi.org/sites/default/files/styles/large_780x520/public/2019-06/WV277121.jpg?itok=uPwrtu3R' ></img>
                 <h4>Maria</h4>
@@ -18,17 +19,17 @@
             </div>
 
             <div class='profiles'>
-                <img src='https://www.voicesofyouth.org/sites/voy/files/styles/big_blog_teaser/public/images/2020-07/uni309268.jpg?itok=47eiJxM1'></div>
+                <img src='https://www.voicesofyouth.org/sites/voy/files/styles/big_blog_teaser/public/images/2020-07/uni309268.jpg?itok=47eiJxM1'>
                 <h4>Ismael</h4>
                 <p> Ismael is a very smart, talented pianist, likes to draw and is a winetaster</p>
             </div>
 
             <div class='profiles'>
-                <img src='https://upload.wikimedia.org/wikipedia/commons/1/1d/Knitting_a_brighter_future_for_Syrian_refugees_in_Lebanon_%2811173833666%29.jpg'></div>
+                <img src='https://upload.wikimedia.org/wikipedia/commons/1/1d/Knitting_a_brighter_future_for_Syrian_refugees_in_Lebanon_%2811173833666%29.jpg'>
                 <h4>Muna</h4>
                 <p> Muna is a well known surfer, live in Homs shes a pasta lover</p>
-            </div>
-        </div>
+			</div>
+		</div>
         <br>
         <h2> Settings[When and Where] </h2>
         <form>
@@ -52,6 +53,6 @@
                 <input type="textarea" name="donations">
             </div>
         </form>
-    </center>
+    </div>
 </body>
 </html>
