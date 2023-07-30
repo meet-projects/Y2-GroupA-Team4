@@ -29,7 +29,7 @@ def root():
             organization = request.form["org"]
             email = request.form["email"]
             phone = request.form["phone"]
-            donation = request.form["donation"]
+            donation = request.form["donations"]
 
             dictionary = {
                 "email"   : email,
