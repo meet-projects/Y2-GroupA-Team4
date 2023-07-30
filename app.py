@@ -29,12 +29,12 @@ def root():
             organization = request.form["org"]
             email = request.form["email"]
             phone = request.form["phone"]
-            donation = request.form["donations"]
+            donation = request.form["donation"]
 
             dictionary = {
                 "email"   : email,
                 "phone"   : phone,
-                "donations": donation
+                "donation": donation
             }
 
             if db.child(organization) != None:
