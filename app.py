@@ -22,7 +22,7 @@ db = fb.database()
 
 #Code goes below here
 
-@app.route("/", method=["GET", "POST"])
+@app.route("/", methods=["GET", "POST"])
 def root():
     if request.method == "POST":
         try:
