@@ -3,24 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Zakat</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla%20One">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre%20Franklin">
 	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
 </head>
 <body>
-    <content class="content">
+  <header>
+    <div>
+      <h1>TRAVLRPACK</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">DESIGN</a></li>
+        <li><a href="#">USER GUIDE</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">POLICY</a></li>
+        <li><a href="#">DONATE</a></li>
+      </ul>
+    </nav>
+  </header>
+
+	<content class="content">
         <div class="content">
             <div>
                 <h1>What is Zakat?</h1>
                 <p>Zakat is an Islamic financial term. As one of the pillars of the faith, it requires all Muslims to donate a portion of their wealth to charity. Muslims must meet a certain threshold before they can qualify for zakat. The amount is 2.5% of an individual's total savings and wealth.</p>
     		</div>
-            <br>
-            <br>
             <form action='/' method='POST'>
-                <h2> Calculate Zakat </h2>
+                <h1> Calculate Zakat </h1>
                 <div>
                     <h3> Total Savings: </h3>
                     <input type='textarea' name= 'zakat'>
                 </div>
-                <input type="submit" value="Continue">
+				<div class="union">
+					<input type="submit" value="Continue">
+					<a href='https://www.launchgood.com/campaign/warm_blankets_for_refugee_children#!/'><button>Donate Now</button></a>
+				</div>
             </form>
         </div>
         <br>
@@ -30,7 +49,16 @@
                 Your current Zakat: {{zakat}}
             </dialog>
         {% endif %}
-        <a href='https://www.launchgood.com/campaign/warm_blankets_for_refugee_children#!/'><button>Donate Now</button></a>
     </content>
+	
+  <footer>
+    <div class="social-icons">
+		<a href="#" class="twitter-icon"><img src="{{url_for('static', filename='twitter.png')}}" alt="Twitter"></a>
+      <a href="https://instagram.com/travlerpack?igshid=MzRlODBiNWFlZA==" class="instagram-icon"><img src="{{url_for('static', filename='instagram.png')}}" alt="Instagram"></a>
+      <a href="#" class="facebook-icon"><img src="{{url_for('static', filename='facebook.png')}}" alt="Facebook"></a>
+    </div>
+    <p>&copy; 2023 Travlrpack. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
