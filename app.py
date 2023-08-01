@@ -30,14 +30,17 @@ def zakat():
     if request.method == 'POST':
         try:
             money = request.form['zakat']
-            zakat = int(money)*0.025
-            db.child("zakat").set()            
+            x = round(float(money)*0.025,2)
+            zakat = { 'zakat': x }
+            db.child("zakat").set(zakat)            
             db.child("zakat").update(zakat)
             zakat = db.child("zakat").get().val()
-        except:
+            zakat = zakat['zakat']
+        except Exception as e:
+            print(e)
             zakat = 'Error'
         return render_template('index.html', zakat = zakat)
-    return render_template('index.html')
+    return render_template('index.html', zakat = zakat)
 
 
 

@@ -20,9 +20,16 @@
                     <h3> Total Savings: </h3>
                     <input type='textarea' name= 'zakat'>
                 </div>
-                <input type="submit">
+                <input type="submit" value="Continue">
             </form>
         </div>
+        <br>
+        {% if zakat != '' %}
+            <dialog open>
+                <a href="/"><button>X</button></a>
+                Your current Zakat: {{zakat}}
+            </dialog>
+        {% endif %}
         <a href='https://www.launchgood.com/campaign/warm_blankets_for_refugee_children#!/'><button>Donate Now</button></a>
     </content>
 </body>
