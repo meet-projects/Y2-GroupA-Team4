@@ -1,76 +1,81 @@
 /* Reset default margin and padding */
-body, h1, h2, h3, p, form {
+body {
     margin: 0;
     padding: 0;
-}
-
-/* Set body background color and text color */
-body {
-    background-color: #f0f0f0;
-    color: #333;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #fff;
+    font-family: "Libre Franklin";
     height: 100vh;
 }
 
+nav, header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  padding: 25px;
+}
+
+form {
+	width: 100%;
+}
+
+nav {
+	align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  margin-right: 20px;
+}
+
+li:last-child {
+  margin-right: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #999;
+}
 /* Center the content */
 .content {
     display: flex;
     flex-direction: column;
     align-items: center;
+	justify-content: center;
+	width: 83.3333%;
 }
-
 /* Style the main content container */
-.content > div {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 40px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Apply greyscale effect */
-    filter: grayscale(100%);
-}
 
 /* Style the heading */
 h1 {
-    color: #333;
-    font-size: 36px;
+    font-size: 32px;
     margin-bottom: 20px;
-    text-align: center;
+	font-weight: 32px;
+	letter-spacing: .02em;
+	font-family: "Fjalla One";
 }
 
 /* Style the paragraph */
 p {
-    color: #666;
-    line-height: 1.8;
-    font-size: 18px;
-}
-
-/* Style the form container */
-form {
-    margin-top: 30px;
-    width: 100%;
-    max-width: 400px;
-}
-
-/* Style the subheading */
-h2 {
-    color: #333;
-    font-size: 28px;
-    margin-bottom: 15px;
+    line-height: 1.8em;
+    font-size: 24px;
 }
 
 /* Style the label for total savings input */
 h3 {
-    color: #333;
     font-size: 24px;
     margin-bottom: 10px;
+    font-family: "Libre Franklin";
 }
 
 /* Style the input for total savings */
 input[name='zakat'] {
-    width: 100%;
+    width: 25%;
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -81,9 +86,9 @@ input[name='zakat'] {
 input[type='submit'] {
     margin-top: 20px;
     padding: 15px 30px;
-    background-color: #007BFF;
+    background-color: #000;
     color: #fff;
-    border: none;
+    border: solid 1px transparent;
     border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
@@ -93,9 +98,9 @@ input[type='submit'] {
 a > button {
     margin-top: 30px;
     padding: 15px 30px;
-    background-color: #28A745;
+    background-color: #000;
     color: #fff;
-    border: none;
+    border: solid 1px transparent;
     border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
@@ -104,7 +109,9 @@ a > button {
 
 /* Hover effect on buttons */
 input[type='submit']:hover, a > button:hover {
-    background-color: #0056b3;
+    background-color: #fff;
+	color: #000;
+	border: solid 1px #000;
 }
 
 /* Responsive styles */
@@ -121,4 +128,28 @@ input[type='submit']:hover, a > button:hover {
     p {
         font-size: 16px;
     }
+}
+
+footer {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-icons {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+footer > p {
+	color: white;
 }
